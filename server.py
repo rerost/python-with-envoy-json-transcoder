@@ -27,13 +27,11 @@ class Recommend(recommend_pb2_grpc.RecommendServiceServicer):
         {
           "id": 2, 
           "score": 6,
-          "score_description": recommend_pb2.ScoreDescription(
-            scores=[
-              recommend_pb2.Score(name="popularity", score=5),
-              recommend_pb2.Score(name="attractive", score=1),
-            ],
-            score_func="0.5 * popularity + 0.5 * attractive",
-          )
+          "scores": [
+            recommend_pb2.Score(name="popularity", score=5),
+            recommend_pb2.Score(name="attractive", score=1),
+          ],
+          "score_func": "0.5 * popularity + 0.5 * attractive"
         }
       ]
     )
@@ -57,6 +55,6 @@ def serve(port):
 
 if __name__ == '__main__':
   port = os.getenv("GRPC_PORT")
-  print("Started server {0}.".format(port))
   logging.basicConfig()
+  print("Started server {0}.".format(port))
   serve(port)
