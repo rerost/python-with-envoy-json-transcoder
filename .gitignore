@@ -1,0 +1,4 @@
+gateway/vendor
+gateway/bin
+
+.env
