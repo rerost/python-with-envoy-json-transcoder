@@ -18,10 +18,10 @@ from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='recommend.proto',
-  package='com.github.rerost.python_with_grpc_gateway',
+  package='python_with_grpc_gateway',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x0frecommend.proto\x12*com.github.rerost.python_with_grpc_gateway\x1a\x1cgoogle/api/annotations.proto\x1a\x1bgoogle/protobuf/empty.proto\"z\n\x04User\x12\n\n\x02id\x18\x01 \x01(\x03\x12\r\n\x05score\x18\x02 \x01(\x01\x12W\n\x11score_description\x18\x03 \x01(\x0b\x32<.com.github.rerost.python_with_grpc_gateway.ScoreDescription\"T\n\x11ListUsersResponse\x12?\n\x05users\x18\x01 \x03(\x0b\x32\x30.com.github.rerost.python_with_grpc_gateway.User\"8\n\x05Score\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x01\x12\x12\n\nscore_func\x18\x03 \x01(\t\"i\n\x10ScoreDescription\x12\x41\n\x06scores\x18\x01 \x03(\x0b\x32\x31.com.github.rerost.python_with_grpc_gateway.Score\x12\x12\n\nscore_func\x18\x02 \x01(\t2\x86\x01\n\x10RecommendService\x12r\n\tListUsers\x12\x16.google.protobuf.Empty\x1a=.com.github.rerost.python_with_grpc_gateway.ListUsersResponse\"\x0e\x82\xd3\xe4\x93\x02\x08\x12\x06/usersb\x06proto3')
+  serialized_pb=_b('\n\x0frecommend.proto\x12\x18python_with_grpc_gateway\x1a\x1cgoogle/api/annotations.proto\x1a\x1bgoogle/protobuf/empty.proto\"h\n\x04User\x12\n\n\x02id\x18\x01 \x01(\x03\x12\r\n\x05score\x18\x02 \x01(\x01\x12\x45\n\x11score_description\x18\x03 \x01(\x0b\x32*.python_with_grpc_gateway.ScoreDescription\"B\n\x11ListUsersResponse\x12-\n\x05users\x18\x01 \x03(\x0b\x32\x1e.python_with_grpc_gateway.User\"8\n\x05Score\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x01\x12\x12\n\nscore_func\x18\x03 \x01(\t\"W\n\x10ScoreDescription\x12/\n\x06scores\x18\x01 \x03(\x0b\x32\x1f.python_with_grpc_gateway.Score\x12\x12\n\nscore_func\x18\x02 \x01(\t2t\n\x10RecommendService\x12`\n\tListUsers\x12\x16.google.protobuf.Empty\x1a+.python_with_grpc_gateway.ListUsersResponse\"\x0e\x82\xd3\xe4\x93\x02\x08\x12\x06/usersb\x06proto3')
   ,
   dependencies=[google_dot_api_dot_annotations__pb2.DESCRIPTOR,google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,])
 
@@ -30,27 +30,27 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _USER = _descriptor.Descriptor(
   name='User',
-  full_name='com.github.rerost.python_with_grpc_gateway.User',
+  full_name='python_with_grpc_gateway.User',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='com.github.rerost.python_with_grpc_gateway.User.id', index=0,
+      name='id', full_name='python_with_grpc_gateway.User.id', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='score', full_name='com.github.rerost.python_with_grpc_gateway.User.score', index=1,
+      name='score', full_name='python_with_grpc_gateway.User.score', index=1,
       number=2, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='score_description', full_name='com.github.rerost.python_with_grpc_gateway.User.score_description', index=2,
+      name='score_description', full_name='python_with_grpc_gateway.User.score_description', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -68,20 +68,20 @@ _USER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=122,
-  serialized_end=244,
+  serialized_start=104,
+  serialized_end=208,
 )
 
 
 _LISTUSERSRESPONSE = _descriptor.Descriptor(
   name='ListUsersResponse',
-  full_name='com.github.rerost.python_with_grpc_gateway.ListUsersResponse',
+  full_name='python_with_grpc_gateway.ListUsersResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='users', full_name='com.github.rerost.python_with_grpc_gateway.ListUsersResponse.users', index=0,
+      name='users', full_name='python_with_grpc_gateway.ListUsersResponse.users', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -99,34 +99,34 @@ _LISTUSERSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=246,
-  serialized_end=330,
+  serialized_start=210,
+  serialized_end=276,
 )
 
 
 _SCORE = _descriptor.Descriptor(
   name='Score',
-  full_name='com.github.rerost.python_with_grpc_gateway.Score',
+  full_name='python_with_grpc_gateway.Score',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='com.github.rerost.python_with_grpc_gateway.Score.name', index=0,
+      name='name', full_name='python_with_grpc_gateway.Score.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='score', full_name='com.github.rerost.python_with_grpc_gateway.Score.score', index=1,
+      name='score', full_name='python_with_grpc_gateway.Score.score', index=1,
       number=2, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='score_func', full_name='com.github.rerost.python_with_grpc_gateway.Score.score_func', index=2,
+      name='score_func', full_name='python_with_grpc_gateway.Score.score_func', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -144,27 +144,27 @@ _SCORE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=332,
-  serialized_end=388,
+  serialized_start=278,
+  serialized_end=334,
 )
 
 
 _SCOREDESCRIPTION = _descriptor.Descriptor(
   name='ScoreDescription',
-  full_name='com.github.rerost.python_with_grpc_gateway.ScoreDescription',
+  full_name='python_with_grpc_gateway.ScoreDescription',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='scores', full_name='com.github.rerost.python_with_grpc_gateway.ScoreDescription.scores', index=0,
+      name='scores', full_name='python_with_grpc_gateway.ScoreDescription.scores', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='score_func', full_name='com.github.rerost.python_with_grpc_gateway.ScoreDescription.score_func', index=1,
+      name='score_func', full_name='python_with_grpc_gateway.ScoreDescription.score_func', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -182,8 +182,8 @@ _SCOREDESCRIPTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=390,
-  serialized_end=495,
+  serialized_start=336,
+  serialized_end=423,
 )
 
 _USER.fields_by_name['score_description'].message_type = _SCOREDESCRIPTION
@@ -198,28 +198,28 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 User = _reflection.GeneratedProtocolMessageType('User', (_message.Message,), dict(
   DESCRIPTOR = _USER,
   __module__ = 'recommend_pb2'
-  # @@protoc_insertion_point(class_scope:com.github.rerost.python_with_grpc_gateway.User)
+  # @@protoc_insertion_point(class_scope:python_with_grpc_gateway.User)
   ))
 _sym_db.RegisterMessage(User)
 
 ListUsersResponse = _reflection.GeneratedProtocolMessageType('ListUsersResponse', (_message.Message,), dict(
   DESCRIPTOR = _LISTUSERSRESPONSE,
   __module__ = 'recommend_pb2'
-  # @@protoc_insertion_point(class_scope:com.github.rerost.python_with_grpc_gateway.ListUsersResponse)
+  # @@protoc_insertion_point(class_scope:python_with_grpc_gateway.ListUsersResponse)
   ))
 _sym_db.RegisterMessage(ListUsersResponse)
 
 Score = _reflection.GeneratedProtocolMessageType('Score', (_message.Message,), dict(
   DESCRIPTOR = _SCORE,
   __module__ = 'recommend_pb2'
-  # @@protoc_insertion_point(class_scope:com.github.rerost.python_with_grpc_gateway.Score)
+  # @@protoc_insertion_point(class_scope:python_with_grpc_gateway.Score)
   ))
 _sym_db.RegisterMessage(Score)
 
 ScoreDescription = _reflection.GeneratedProtocolMessageType('ScoreDescription', (_message.Message,), dict(
   DESCRIPTOR = _SCOREDESCRIPTION,
   __module__ = 'recommend_pb2'
-  # @@protoc_insertion_point(class_scope:com.github.rerost.python_with_grpc_gateway.ScoreDescription)
+  # @@protoc_insertion_point(class_scope:python_with_grpc_gateway.ScoreDescription)
   ))
 _sym_db.RegisterMessage(ScoreDescription)
 
@@ -227,16 +227,16 @@ _sym_db.RegisterMessage(ScoreDescription)
 
 _RECOMMENDSERVICE = _descriptor.ServiceDescriptor(
   name='RecommendService',
-  full_name='com.github.rerost.python_with_grpc_gateway.RecommendService',
+  full_name='python_with_grpc_gateway.RecommendService',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=498,
-  serialized_end=632,
+  serialized_start=425,
+  serialized_end=541,
   methods=[
   _descriptor.MethodDescriptor(
     name='ListUsers',
-    full_name='com.github.rerost.python_with_grpc_gateway.RecommendService.ListUsers',
+    full_name='python_with_grpc_gateway.RecommendService.ListUsers',
     index=0,
     containing_service=None,
     input_type=google_dot_protobuf_dot_empty__pb2._EMPTY,

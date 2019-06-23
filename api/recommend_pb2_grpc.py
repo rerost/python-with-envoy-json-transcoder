@@ -16,7 +16,7 @@ class RecommendServiceStub(object):
       channel: A grpc.Channel.
     """
     self.ListUsers = channel.unary_unary(
-        '/com.github.rerost.python_with_grpc_gateway.RecommendService/ListUsers',
+        '/python_with_grpc_gateway.RecommendService/ListUsers',
         request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
         response_deserializer=recommend__pb2.ListUsersResponse.FromString,
         )
@@ -43,5 +43,5 @@ def add_RecommendServiceServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'com.github.rerost.python_with_grpc_gateway.RecommendService', rpc_method_handlers)
+      'python_with_grpc_gateway.RecommendService', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

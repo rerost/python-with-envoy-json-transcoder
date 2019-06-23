@@ -1,5 +1,5 @@
 syntax = "proto3";
-package com.github.rerost.python_with_grpc_gateway;
+package python_with_grpc_gateway;
 
 import "google/api/annotations.proto";
 import "google/protobuf/empty.proto";
